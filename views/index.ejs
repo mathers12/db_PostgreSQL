@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+  <body>
+  <table border="2">
+      <thead>
+      <tr>
+          <td>Name</td><td>Last Name</td><td>Age</td>
+      </tr>
+      </thead>
+      <tbody>
+
+
+
+  <% var data =JSON.parse(title);%>
+
+      <%for (var i in data){%>
+  <tr>
+      <td><%= data[i].name%></td>
+      <td><%= data[i].lastname%></td>
+      <td><%= data[i].age%></td>
+
+  </tr>
+      <%}%>
+      </tbody>
+  </table>
+
+  </body>
+</html>
